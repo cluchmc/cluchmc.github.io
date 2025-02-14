@@ -107,7 +107,7 @@ const chargeList = [
   
     // Send data to Discord webhook
     try {
-      const webhookUrl = "https://discord.com/api/webhooks/1340083196380971199/dqhTfGbWpxWmXhZf-H3ZqCFQdlFSanINx6usFUGCpSoHVx7n2CggY2KttjXqBwEBrpbC";
+      const webhookUrl = "https://discord.com/api/webhooks/1340091788177838080/8VrhvflUGibVA9lNF_5YB_XScoq6gJcFuQ_4cRTLFd070xAsnO-yWPNl_DhKin9G29Z1";
       const response = await fetch(webhookUrl, {
         method: "POST",
         headers: {
