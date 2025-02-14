@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheriff Arrest Report - 1902</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background"></div>
+
+  <!-- Form Container -->
+  <div class="container">
+    <h2>Sheriff Arrest Report - 1902</h2>
+    <div id="error" class="hidden"></div>
+
+    <!-- Report Title Input -->
+    <input
+      id="reportTitle"
+      type="text"
+      placeholder="Report Title"
+    />
+
+    <!-- Suspect Name Input -->
+    <input
+      id="suspect"
+      type="text"
+      placeholder="Suspect Name"
+    />
+
+    <!-- Character ID Input -->
+    <input
+      id="characterId"
+      type="text"
+      placeholder="Character ID"
+    />
+
+    <!-- Mugshot URL Input -->
+    <input
+      id="mugshot"
+      type="text"
+      placeholder="Mugshot URL"
+    />
+
+    <!-- Job Input -->
+    <input
+      id="job"
+      type="text"
+      placeholder="Job"
+    />
+
+    <!-- Charges Section -->
+    <h3>Charges</h3>
+    <select id="chargeSelect">
+      <option value="" disabled selected>Select a charge</option>
+      <option value="Theft">Theft</option>
+      <option value="Assault">Assault</option>
+      <option value="Murder">Murder</option>
+    </select>
+
+    <!-- Add Charge Button -->
+    <button id="addCharge">Add Charge</button>
+
+    <!-- Selected Charges List -->
+    <h3>Selected Charges</h3>
+    <ul id="chargesList"></ul>
+
+    <!-- Reduction Section -->
+    <h3>Total Reduction</h3>
+    <select id="reductionSelect">
+      <option value="0" selected>0% Reduction</option>
+      <option value="10">10% Reduction</option>
+      <option value="25">25% Reduction</option>
+      <option value="50">50% Reduction</option>
+    </select>
+
+    <!-- Server ID Input -->
+    <input
+      id="serverId"
+      type="text"
+      placeholder="Player's Server ID"
+      class="server-id"
+    />
+
+    <!-- Total Fine and Jail Time -->
+    <p class="total" onclick="copyToClipboard('fine')">Total Fine: $<span id="totalFine">0.00</span></p>
+    <p class="total" onclick="copyToClipboard('jailTime')">Jail Time: <span id="totalJailTime">0.00</span> minutes</p>
+
+    <!-- Report Details Textarea -->
+    <textarea
+      id="reportDetails"
+      placeholder="Report Details"
+      rows="4"
+    ></textarea>
+
+    <!-- Submit Button -->
+    <button id="submitReport">Submit Report</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
